@@ -5,10 +5,11 @@ terraform {
   required_version = ">= 1.0"
 }
 
+provider "template" {}
+
 terraform {
   required_providers {
     template = {
-      source  = "hashicorp/template"
       version = "~> 2"
     }
   }
