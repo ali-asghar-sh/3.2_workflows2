@@ -1,19 +1,7 @@
 provider "aws" {
   region = "ap-southeast-1"
 }
-terraform {
-  required_version = ">= 1.0"
-}
 
-provider "template" {}
-
-terraform {
-  required_providers {
-    template = {
-      version = "~> 2"
-    }
-  }
-}
 terraform {
   backend "s3" {
     bucket = "sctp-ce10-tfstate"
