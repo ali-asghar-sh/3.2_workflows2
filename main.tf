@@ -9,7 +9,7 @@ terraform {
   required_providers {
     template = {
       source  = "hashicorp/template"
-      version = "~> 1"
+      version = "~> 2"
     }
   }
 }
