@@ -4,6 +4,15 @@ provider "aws" {
 terraform {
   required_version = ">= 1.0"
 }
+
+terraform {
+  required_providers {
+    template = {
+      source  = "hashicorp/template"
+      version = "~> 2"
+    }
+  }
+}
 terraform {
   backend "s3" {
     bucket = "sctp-ce10-tfstate"
